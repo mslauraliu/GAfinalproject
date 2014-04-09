@@ -1,0 +1,106 @@
+/* 
+Project Name: Final project
+Client: Laura Liu
+Author: Laura Liu Cruickshanks
+*/
+
+
+
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+body {
+  background-color: #502867;
+  color: white;
+  font-family: 'museo_sans300', helvetica, sans-serif;
+}
+
+#web {
+  background-color: #434d61;
+}
+
+#mobile {
+  background-color: #6f6077;
+}
+
+#print {
+  background-color: #434273;
+}
+
+#resume {
+  background-color: #471f60;
+}
+
+#contact {
+  background-color: #13334f;
+}
+
+h1 {
+  font-family: 'museo_sans900';
+  font-size: 2em;
+}
+
+h1.highlight {
+  background-color: #833896;
+}
+
+footer {
+  border-top: 1px solid white;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+
+
+/******************************************
+/* navigation                  
+/*******************************************/
+
+
+nav img{
+  width: 80%;
+  height: 80%;
+  max-width: 50px;
+  max-height: 50px;
+  margin: 20px;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+/*    width: 300px;
+    height: 300px;*/
+}
+
+/******************************************
+/* RESPONSIVE                  
+/*******************************************/
+@media screen and (max-width: 768px) {
+
+     header nav ul li {
+          display: none;
+     }
+
+     header nav ul li:first-of-type {
+          display: block;
+     }
+
+     .sub-content, footer>div {
+          float: none;
+          width: 97%;
+     }
+
+}
+
+

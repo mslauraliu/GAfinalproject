@@ -1,0 +1,177 @@
+/* 
+Project Name: Final project
+Client: Laura Liu
+Author: Laura Liu Cruickshanks
+*/
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+  background-color: #502867;
+  color: white;
+  font-family: 'museo_sans300', helvetica, sans-serif;
+  font-size: 1.15em;
+}
+
+#web {
+  background-color: #434d61;
+}
+
+#mobile {
+  background-color: #6f6077;
+}
+
+#print {
+  background-color: #434273;
+}
+
+#resume {
+  background-color: #471f60;
+}
+
+#contact {
+  background-color: #13334f;
+}
+
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/*---------------HEADER---------------*/
+header {
+  float: left;
+  width: 100%;
+}
+
+h1 {
+  background-color: #833896;
+  border-radius: 0 0 15px 15px;
+  display: inline-block;
+  float: left;
+  font-family: 'museo_sans700';
+  font-size: 2em;
+  padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+/******************************************
+/* navigation                  
+/*******************************************/
+
+nav {
+  display: inline-block;
+  margin: 5px auto;
+  width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  width: 15%;
+}
+
+nav img {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 3px;
+}
+
+/******************************************
+/* body                 
+/*******************************************/
+
+section img {
+  margin: 15px auto;
+}
+
+section h2:before, section h2:after {
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: -35px;
+  content: "leftquote";
+  height: 100%;
+  width: 100%;
+  background: 
+    url(../img/leftquote.svg) no-repeat;
+  background-size: 150px;
+  z-index: -1;
+}
+
+section h2:after {
+  background: 
+    url(../img/rightquote.svg) 100% 100% no-repeat;
+  background-size: 150px;
+  bottom: 0;
+  left: auto;
+  right: -35px;
+}
+
+section h2 {
+  font-family: 'museo_sans700';
+  font-size: 1.65em;
+  line-height: 1.05em;
+  margin: 10px auto;
+  position: relative;
+  text-align: left;
+  width: 80%;
+  z-index: 111;
+}
+
+/******************************************
+/* FOOTER                  
+/*******************************************/
+
+footer {
+  border-top: 1px solid white;
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.socialicons {
+  margin: 10px auto;
+}
+
+.socialicons img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 280px;
+    height: 280px;
+}
+
+
+
+/*@media only screen closing bracket*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

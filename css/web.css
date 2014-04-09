@@ -1,0 +1,402 @@
+/* 
+Project Name: Final project
+Client: Laura Liu
+Author: Laura Liu Cruickshanks
+*/
+
+
+@media only screen and (min-width: 481px)  {
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+html {
+  min-height: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body {
+  background-color: #502867;
+  color: white;
+  font-family: 'museo_sans300', helvetica, sans-serif;
+  font-size: 1.15em;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container:before {
+  background-color: #fff;
+  content: "background-color";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+.home, .home:before {
+  background-color: #502867;
+}
+
+.web, .web:before {
+  background-color: #434d61;
+}
+
+.mobile, .mobile:before {
+  background-color: #6f6077;
+}
+
+.print, .print:before {
+  background-color: #434273;
+}
+
+.resume, .resume:before {
+  background-color: #4A4144;
+}
+
+.contact, .contact:before {
+  background-color: #13334f;
+}
+
+
+.container {
+  min-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+h1 {
+  background-color: rgba(255, 255, 255, .15);
+  border-radius: 0 0 5px 5px;
+/*  display: inline-block;
+  float: left;*/
+  font-family: 'museo_sans700';
+  font-size: 2em;
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 250px;
+}
+
+h2 {
+  font-family: 'museo_sans700';
+  font-size: 1.65em;
+  line-height: 1.15em;
+}
+
+h3 {
+  font-family: 'museo_sans700';
+  font-size: 1.25em;
+  text-align: left;
+}
+
+h4 {
+  font-family: 'museo_sans700';
+  text-align: left;
+}
+
+/******************************************
+/* navigation                  
+/*******************************************/
+
+nav {
+  display: inline-block;
+  margin: 5px auto;
+  width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  width: 15%;
+}
+
+nav img {
+  max-width: 55px;
+  max-height: 55px;
+  margin: 3px;
+}
+
+/******************************************
+/* body                 
+/*******************************************/
+
+.profile img {
+  margin: 25px auto;
+}
+
+.introduction:before, .introduction:after {
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: -35px;
+  content: "leftquote";
+  height: 100%;
+  width: 100%;
+  background: 
+    url(../img/leftquote.svg) no-repeat;
+  background-size: 150px;
+  z-index: -1;
+}
+
+.introduction:after {
+  background: 
+    url(../img/rightquote.svg) 100% 100% no-repeat;
+  background-size: 150px;
+  bottom: 0;
+  left: auto;
+  right: -35px;
+}
+
+h2.introduction {
+  margin: 10px auto;
+  position: relative;
+  text-align: left;
+  width: 80%;
+  z-index: 111;
+}
+/*--------------web-mobile-print----------------*/
+section.portfolio {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.portfolio img {
+  margin-top: 10px;
+  width: 100%;
+}
+
+h6 {
+  display:none;
+}
+
+#web1, #web2, #web3, #mobile1, #mobile2, #mobile3, #mobile4, #portfolio1, #portfolio2, #portfolio3 {
+    -webkit-perspective: 700px;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective: 700px;
+    -moz-perspective-origin: 50% 50%;
+    -o-perspective: 700px;
+    -o-perspective-origin: 50% 50%;
+    -ms-perspective: 700px;
+    -ms-perspective-origin: 50% 50%;
+    perspective: 700px;
+    perspective-origin: 50% 50%;
+}
+
+.card {
+    height:0;
+    padding-bottom: 80%;
+    width: 100%;
+    cursor: pointer;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transition: -webkit-transform 1.0s cubic-bezier(0,.75,.25,1);
+    -moz-transition: -moz-transform 1.0s cubic-bezier(0,.75,.25,1);
+    -o-transition: -o-transform 1.0s cubic-bezier(0,.75,.25,1);
+    -ms-transition: -ms-transform 1.0s cubic-bezier(0,.75,.25,1);
+    transition: transform 1.0s cubic-bezier(0,.75,.25,1);
+}
+
+.card.flip {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY‘‘“(180deg);
+}
+
+.info {
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.back {
+  background-color: white;
+  color: black;
+  height: 0;
+  margin-top: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 25px;
+  padding-bottom: calc(80% - 50px);
+  width: 100%;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.back img {
+  margin-bottom: 15px;
+}
+
+.back p {
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+/*--------------resumé----------------*/
+
+.details {
+  color: black;
+  margin: 10px auto;
+  text-align: left;
+  width: 90%;
+  line-height: 1.25em;
+}
+
+.experience {
+  background-color: rgba(255, 255, 255, .6);
+  margin-bottom: 2em;
+  padding: 20px 20px;
+}
+
+.education {
+  background-color: rgba(255, 255, 255, .6);
+  margin-bottom: 2em;
+  padding: 20px 20px;
+}
+
+.awards {
+  background-color: rgba(255, 255, 255, .6);
+  margin-bottom: 2em;
+  padding: 20px 20px;
+}
+
+.experience h2, .education h2, .awards h2 {
+  font-size: 1.5em;
+}
+
+.experience h3, .education h3, .awards h3 {
+  margin-top: 15px;
+}
+
+.experience li, .education li, .awards li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/*Contact page*/
+form {
+  margin: 20px auto;
+  width: 80%;
+}
+
+::-webkit-input-placeholder {
+   color: #5e6d7b;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #5e6d7b;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #5e6d7b;  
+}
+
+:-ms-input-placeholder {  
+   color: #5e6d7b;  
+}
+
+input[type='text'],
+input[type='submit'],
+textarea {
+  background-color: white;
+  border: none;
+  font-family: menlo, monospace;
+  font-size: .75em;
+  color: #5e6d7b;
+  margin: 10px 0;
+  padding: 8px;
+  height: 40px;
+  width: 100%;
+}
+
+input[type='submit'] {
+  background-color: #ffcd00;
+  border: none;
+  color: white;
+  font-family: 'museo_sans700';
+  font-size: .9em;
+  float: left;
+  margin-bottom: 25px;
+  width: 50%;
+}
+
+input[type='submit']:hover {
+  background-color: #fcb415;
+  /*color: #13334f;*/
+  transition: .2s ease-in-out;
+}
+
+textarea {
+  height: 120px;
+}
+/******************************************
+/* FOOTER                  
+/*******************************************/
+
+footer {
+  border-top: 1px solid white;
+  clear: both;
+  margin: 0px auto;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+  width: 95%;
+}
+
+.socialicons {
+  margin: 10px auto;
+}
+
+.socialicons img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 300px;
+    height: 300px;
+}
+
+
+
+/*@media only screen closing bracket*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
