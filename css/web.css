@@ -22,7 +22,7 @@ html {
 body:before {
   background: white;
   color: black;
-  content: "mobile";
+  content: "web";
   position: fixed;
   top: 0;
   left: 0;
