@@ -6,8 +6,9 @@ Author: Laura Liu Cruickshanks
 
 
 
-@media all and (min-device-width: 320px), and (max-device-width: 568px), 
-and (-webkit-device-pixel-ratio: 2), and (device-aspect-ratio: 40/71) {
+@media 
+(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dpi){ 
 
 /******************************************
 /* BASE STYLES                   
