@@ -19,6 +19,15 @@ html {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
  }
 
+body:before {
+  background: white;
+  color: black;
+  content: "mobile";
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 body {
   background-color: #502867;
   color: white;
