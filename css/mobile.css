@@ -6,7 +6,10 @@ Author: Laura Liu Cruickshanks
 
 
 
-@media only screen and (max-device-width: 640px) and (max-width: 480px) {
+@media only screen and (max-device-width: 480px),
+only screen and (max-width: 480px), 
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
 
 /******************************************
 /* BASE STYLES                   
