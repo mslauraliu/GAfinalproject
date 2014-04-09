@@ -6,7 +6,7 @@ Author: Laura Liu Cruickshanks
 
 
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 640px) and (max-width: 480px) {
 
 /******************************************
 /* BASE STYLES                   
