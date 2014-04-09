@@ -22,7 +22,7 @@ html {
 body:before {
   background: white;
   color: black;
-  content: "web";
+  content: "web2";
   position: fixed;
   top: 0;
   left: 0;
